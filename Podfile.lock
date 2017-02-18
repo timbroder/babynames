@@ -1,0 +1,120 @@
+PODS:
+  - ARAnalytics/CoreIOS (4.0.1)
+  - ARAnalytics/DSL (4.0.1):
+    - ReactiveCocoa (~> 2.0)
+    - RSSwizzle (~> 0.1.0)
+  - ARAnalytics/Mixpanel (4.0.1):
+    - ARAnalytics/CoreIOS
+    - Mixpanel
+  - Branch (0.12.26):
+    - Branch/Core (= 0.12.26)
+    - Branch/without-IDFA (= 0.12.26)
+  - Branch/Core (0.12.26)
+  - Branch/without-IDFA (0.12.26)
+  - BuddyBuildSDK (1.0.12)
+  - Cartography (1.0.1)
+  - CPDAcknowledgements (1.0.0)
+  - Crashlytics (3.8.3):
+    - Fabric (~> 1.6.3)
+  - Fabric (1.6.11)
+  - FirebaseAnalytics (3.6.0):
+    - FirebaseCore (~> 3.4)
+    - FirebaseInstanceID (~> 1.0)
+    - GoogleInterchangeUtilities (~> 1.2)
+    - GoogleSymbolUtilities (~> 1.1)
+    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+  - FirebaseCore (3.4.7):
+    - GoogleInterchangeUtilities (~> 1.2)
+    - GoogleSymbolUtilities (~> 1.1)
+    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+  - FirebaseInstanceID (1.0.8)
+  - Google/Analytics (3.0.3):
+    - Google/Core
+    - GoogleAnalytics (~> 3.12)
+  - Google/Core (3.0.3):
+    - FirebaseAnalytics (~> 3.2)
+  - GoogleAnalytics (3.17.0)
+  - GoogleInterchangeUtilities (1.2.2):
+    - GoogleSymbolUtilities (~> 1.1)
+  - GoogleSymbolUtilities (1.1.2)
+  - GoogleToolboxForMac/Defines (2.1.1)
+  - GoogleToolboxForMac/NSData+zlib (2.1.1):
+    - GoogleToolboxForMac/Defines (= 2.1.1)
+  - Instabug (6.4.1)
+  - JLRoutes (1.6.4)
+  - KVOController (1.2.0)
+  - Mixpanel (3.0.9):
+    - Mixpanel/Mixpanel (= 3.0.9)
+  - Mixpanel/Mixpanel (3.0.9)
+  - Nimble (6.0.1)
+  - Quick (1.0.0)
+  - ReactiveCocoa (2.5):
+    - ReactiveCocoa/UI (= 2.5)
+  - ReactiveCocoa/Core (2.5):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.5)
+  - ReactiveCocoa/UI (2.5):
+    - ReactiveCocoa/Core
+  - Realm (2.4.2):
+    - Realm/Headers (= 2.4.2)
+  - Realm/Headers (2.4.2)
+  - RealmSwift (2.4.2):
+    - Realm (= 2.4.2)
+  - RSSwizzle (0.1.0)
+  - SwiftLint (0.16.1)
+  - SwiftyUserDefaults (3.0.0)
+  - SwiftyUUID (1.1.0)
+
+DEPENDENCIES:
+  - ARAnalytics/DSL
+  - ARAnalytics/Mixpanel
+  - Branch
+  - BuddyBuildSDK
+  - Cartography (~> 1.0)
+  - CPDAcknowledgements
+  - Crashlytics
+  - Fabric
+  - Google/Analytics
+  - Instabug
+  - JLRoutes (~> 1.5)
+  - KVOController
+  - Nimble (~> 6.0)
+  - Quick (~> 1.0)
+  - RealmSwift (~> 2.0)
+  - SwiftLint (= 0.16.1)
+  - SwiftyUserDefaults (~> 3.0)
+  - SwiftyUUID (~> 1.1)
+
+SPEC CHECKSUMS:
+  ARAnalytics: 85e7bb999e2a40cea7d2394e71e8ecbafa50f2d0
+  Branch: d23bf9c9073a5883e4d2172af066b298d4128807
+  BuddyBuildSDK: f4682598772ae66c9ef5554d2d78d0a19fb413a0
+  Cartography: c1460e99395b824d9d75360b0382faeb0b33dcd7
+  CPDAcknowledgements: 6e15e71849ba4ad5e8a17a0bb9d20938ad23bac8
+  Crashlytics: 2b6dbe138a42395577cfa73dfa1aa7248cadf39e
+  Fabric: 5911403591946b8228ab1c51d98f1d7137e863c6
+  FirebaseAnalytics: 9c67af0ebeb8d2146c9b4ea2616439affa947b58
+  FirebaseCore: 46afaf2c2e0419ea7d3acfb08cf26a461a75fe85
+  FirebaseInstanceID: ba1e640935235e5fac39dfa816fe7660e72e1a8a
+  Google: 813c467362eabc11385f5a5cc9ad0cb651a58f4e
+  GoogleAnalytics: f42cc53a87a51fe94334821868d9c8481ff47a7b
+  GoogleInterchangeUtilities: d5bc4d88d5b661ab72f9d70c58d02ca8c27ad1f7
+  GoogleSymbolUtilities: 631ee17048aa5e9ab133470d768ea997a5ef9b96
+  GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
+  Instabug: f1e8ced2a08618b48aade3ec67b260f92d8fd8a6
+  JLRoutes: a2e6efb1b1070feccb6dc68e1646ca870f42115b
+  KVOController: d72ace34afea42468329623b3379ab3cd1d286b6
+  Mixpanel: 106bad33d5b9a05312316a01938f17b6baa2d99f
+  Nimble: 1527fd1bd2b4cf0636251a36bc8ab37e81da8347
+  Quick: 8024e4a47e6cc03a9d5245ef0948264fc6d27cff
+  ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
+  Realm: d27b758e12d62a3371879a065d4c40aa212c5a54
+  RealmSwift: 9556c0fe0f0cfecacfb755ae9e68ff379fc6bead
+  RSSwizzle: d561958f595028bfcef98c7d55c318b3878a61c6
+  SwiftLint: b8b683208cc09640898f16318a7a452274e91f61
+  SwiftyUserDefaults: 0f1d45fc3aafb9064dac661e367f8f83fe21a4b4
+  SwiftyUUID: 3cf8e9a58d5f32280766b8de9a0fd0a6e4040f68
+
+PODFILE CHECKSUM: 4fddd609ef61a0ea9642e7c50e3857a031bb5447
+
+COCOAPODS: 1.2.0
