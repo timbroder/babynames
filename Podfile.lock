@@ -42,11 +42,14 @@ PODS:
     - GoogleToolboxForMac/Defines (= 2.1.1)
   - Instabug (6.4.1)
   - JLRoutes (1.6.4)
+  - Koloda (4.0):
+    - pop (~> 1.0)
   - KVOController (1.2.0)
   - Mixpanel (3.0.9):
     - Mixpanel/Mixpanel (= 3.0.9)
   - Mixpanel/Mixpanel (3.0.9)
   - Nimble (6.0.1)
+  - pop (1.0.9)
   - Quick (1.0.0)
   - ReactiveCocoa (2.5):
     - ReactiveCocoa/UI (= 2.5)
@@ -77,6 +80,7 @@ DEPENDENCIES:
   - Google/Analytics
   - Instabug
   - JLRoutes (~> 1.5)
+  - Koloda (~> 4.0)
   - KVOController
   - Nimble (~> 6.0)
   - Quick (~> 1.0)
@@ -103,9 +107,11 @@ SPEC CHECKSUMS:
   GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
   Instabug: f1e8ced2a08618b48aade3ec67b260f92d8fd8a6
   JLRoutes: a2e6efb1b1070feccb6dc68e1646ca870f42115b
+  Koloda: cb171633afc6182a77821b7951e38b2cb272ba7c
   KVOController: d72ace34afea42468329623b3379ab3cd1d286b6
   Mixpanel: 106bad33d5b9a05312316a01938f17b6baa2d99f
   Nimble: 1527fd1bd2b4cf0636251a36bc8ab37e81da8347
+  pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
   Quick: 8024e4a47e6cc03a9d5245ef0948264fc6d27cff
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   Realm: d27b758e12d62a3371879a065d4c40aa212c5a54
@@ -115,6 +121,6 @@ SPEC CHECKSUMS:
   SwiftyUserDefaults: 0f1d45fc3aafb9064dac661e367f8f83fe21a4b4
   SwiftyUUID: 3cf8e9a58d5f32280766b8de9a0fd0a6e4040f68
 
-PODFILE CHECKSUM: 4fddd609ef61a0ea9642e7c50e3857a031bb5447
+PODFILE CHECKSUM: c65ec428a2be5d868b7ee7b77fff0e6d69e31524
 
 COCOAPODS: 1.2.0

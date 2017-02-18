@@ -16,6 +16,7 @@ def all_pods
     pod 'Google/Analytics'
     pod 'Instabug'
     pod 'JLRoutes', '~> 1.5'
+    pod 'Koloda', '~> 4.0'
     pod 'KVOController'
     pod 'RealmSwift', '~> 2.0'
     pod 'SwiftLint', '0.16.1'
