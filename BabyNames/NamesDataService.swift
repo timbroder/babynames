@@ -20,4 +20,8 @@ class NamesDataService {
         return self.realm.objects(Name.self).count
     }
     
+    func all() -> Results<Name> {
+        return self.realm.objects(Name.self)
+    }
+    
 }

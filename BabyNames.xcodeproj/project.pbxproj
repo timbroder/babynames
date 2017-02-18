@@ -23,6 +23,8 @@
 		5E2568E71E58EB0300561754 /* NameInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2568E61E58EB0300561754 /* NameInitializer.swift */; };
 		5E2568EB1E58EB6E00561754 /* NamesDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2568EA1E58EB6E00561754 /* NamesDataService.swift */; };
 		5E2568ED1E58EDF400561754 /* BabyRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2568EC1E58EDF400561754 /* BabyRealm.swift */; };
+		5E2568EF1E58F54800561754 /* NameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2568EE1E58F54800561754 /* NameView.swift */; };
+		5E2568F21E58F71700561754 /* UIColor+Pastels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2568F11E58F71700561754 /* UIColor+Pastels.swift */; };
 		7D0FBC517A41C191B36AAA5E /* Pods_BabyNamesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD267E7195B0D6F1B6D92B9D /* Pods_BabyNamesTests.framework */; };
 		C0342B42C06658011B5979FA /* Pods_BabyNames.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06A7E1EF7CB628B94D60FF99 /* Pods_BabyNames.framework */; };
 		FE8E881BA81FA627D9A1123F /* Pods-BabyNames-metadata.plist in Resources */ = {isa = PBXBuildFile; fileRef = 86C25EE61AF7EA436E1BF2E5 /* Pods-BabyNames-metadata.plist */; };
@@ -69,6 +71,8 @@
 		5E2568E61E58EB0300561754 /* NameInitializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NameInitializer.swift; path = Modules/Data/NameInitializer.swift; sourceTree = "<group>"; };
 		5E2568EA1E58EB6E00561754 /* NamesDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NamesDataService.swift; sourceTree = "<group>"; };
 		5E2568EC1E58EDF400561754 /* BabyRealm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BabyRealm.swift; path = Modules/Data/BabyRealm.swift; sourceTree = "<group>"; };
+		5E2568EE1E58F54800561754 /* NameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NameView.swift; path = Modules/Swiper/NameView.swift; sourceTree = "<group>"; };
+		5E2568F11E58F71700561754 /* UIColor+Pastels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+Pastels.swift"; path = "Utils/UIColor+Pastels.swift"; sourceTree = "<group>"; };
 		6DC485EF30CB8DCD21F3FCE7 /* Pods-BabyNames.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BabyNames.release.xcconfig"; path = "Pods/Target Support Files/Pods-BabyNames/Pods-BabyNames.release.xcconfig"; sourceTree = "<group>"; };
 		86C25EE61AF7EA436E1BF2E5 /* Pods-BabyNames-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-BabyNames-metadata.plist"; path = "Pods/Pods-BabyNames-metadata.plist"; sourceTree = "<group>"; };
 		958D5F44D2D7F51E3C8179E4 /* Pods-BabyNamesTests-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-BabyNamesTests-metadata.plist"; path = "Pods/Pods-BabyNamesTests-metadata.plist"; sourceTree = "<group>"; };
@@ -142,6 +146,7 @@
 		5E2568A81E58E1FA00561754 /* BabyNames */ = {
 			isa = PBXGroup;
 			children = (
+				5E2568F01E58F70400561754 /* Utils */,
 				5E2568B21E58E1FA00561754 /* Assets.xcassets */,
 				5E2568B71E58E1FA00561754 /* Info.plist */,
 				5E2568B41E58E1FA00561754 /* LaunchScreen.storyboard */,
@@ -194,6 +199,7 @@
 			children = (
 				5E2568AB1E58E1FA00561754 /* FirstViewController.swift */,
 				5E2568E61E58EB0300561754 /* NameInitializer.swift */,
+				5E2568EE1E58F54800561754 /* NameView.swift */,
 			);
 			name = Swiper;
 			sourceTree = "<group>";
@@ -232,6 +238,14 @@
 				5E2568EC1E58EDF400561754 /* BabyRealm.swift */,
 			);
 			name = Realms;
+			sourceTree = "<group>";
+		};
+		5E2568F01E58F70400561754 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5E2568F11E58F71700561754 /* UIColor+Pastels.swift */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 		AB93E957879ED54E5387A516 /* Frameworks */ = {
@@ -486,8 +500,10 @@
 				5E2568AA1E58E1FA00561754 /* AppDelegate.swift in Sources */,
 				5E2568E41E58E94500561754 /* Language.swift in Sources */,
 				5E2568AC1E58E1FA00561754 /* FirstViewController.swift in Sources */,
+				5E2568EF1E58F54800561754 /* NameView.swift in Sources */,
 				5E2568ED1E58EDF400561754 /* BabyRealm.swift in Sources */,
 				5E2568E71E58EB0300561754 /* NameInitializer.swift in Sources */,
+				5E2568F21E58F71700561754 /* UIColor+Pastels.swift in Sources */,
 				5E2568E01E58E91800561754 /* Name.swift in Sources */,
 				5E2568EB1E58EB6E00561754 /* NamesDataService.swift in Sources */,
 				5E2568E21E58E93A00561754 /* Category.swift in Sources */,
