@@ -9,7 +9,7 @@
 import Foundation
 import Koloda
 
-class SwiperDelegate: KolodaViewDelegate {
+class CardsDelegate: KolodaViewDelegate {
     func kolodaDidRunOutOfCards(koloda: KolodaView) {
         //        dataSource.reset()
         // event

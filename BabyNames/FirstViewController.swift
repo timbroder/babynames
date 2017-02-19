@@ -15,19 +15,21 @@ class FirstViewController: UIViewController {
 
     var kolodaView = KolodaView()
     var namesCollection: Results<Name>!
-    var swiperDelegate: SwiperDelegate!
+    var cardDelegate: CardsDelegate!
+    var cardDataSource: CardsDataSource!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        swiperDelegate = SwiperDelegate()
+        cardDelegate = CardsDelegate()
         
         let namesRealm = BabyRealm().globalSharedRealm()
         let namesDataService = NamesDataService(realm: namesRealm)
         namesCollection = namesDataService.all()
+        cardDataSource = CardsDataSource(names: namesCollection)
         
-        kolodaView.dataSource = self
-        kolodaView.delegate = swiperDelegate
+        kolodaView.dataSource = cardDataSource
+        kolodaView.delegate = cardDelegate
         
         self.view.addSubview(kolodaView)
         
@@ -42,23 +44,5 @@ class FirstViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-}
-
-extension FirstViewController: KolodaViewDataSource {
-    func kolodaNumberOfCards(_ koloda:KolodaView) -> Int {
-        return namesCollection.count
-    }
-    
-    func koloda(_ koloda: KolodaView, viewForCardAt index: Int) -> UIView {
-        let name = namesCollection[index]
-        let nameVM = NameCardViewModel(name: name)
-        let view = nameVM.view
-        return view!
-    }
-    
-//    func koloda(koloda: KolodaView, viewForCardOverlayAt index: Int) -> OverlayView? {
-//        return NSBundle.mainBundle().loadNibNamed("OverlayView",
-//                                                  owner: self, options: nil)[0] as? OverlayView
-//    }
 }
 
