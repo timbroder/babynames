@@ -10,7 +10,17 @@ import Foundation
 import RealmSwift
 
 class BabyRealm {
-    func namesRealm() -> Realm {
+    func globalSharedRealm() -> Realm {
+        let realm = try! Realm()
+        return realm
+    }
+    
+    func privateSharedRealm() -> Realm {
+        let realm = try! Realm()
+        return realm
+    }
+    
+    func localRealm() -> Realm {
         let realm = try! Realm()
         return realm
     }

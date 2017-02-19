@@ -8,8 +8,12 @@
 
 import UIKit
 import Koloda
+import Cartography
 
-class NameView: UIView {
+class NameCardView: UIView {
+    
+    private var nameLabel = UILabel()
+    
     required init?(coder: NSCoder) {
         super.init(coder: coder)
     }
@@ -27,6 +31,7 @@ class NameView: UIView {
     init(name: String, backgroundColor: UIColor? = nil) {
         super.init(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
         self.initialize(backgroundColor: backgroundColor)
+        self.update(name: name)
     }
     
     func initialize(backgroundColor: UIColor? = nil) {
@@ -38,5 +43,17 @@ class NameView: UIView {
         } else {
             self.backgroundColor = UIColor().generateRandomPastelColor()
         }
+        
+        self.addSubview(nameLabel);
+        
+        constrain(self, nameLabel) { parent, label in
+            label.center == parent.center
+            label.width == parent.width
+        }
+        nameLabel.textAlignment = .center
+    }
+    
+    func update(name: String) {
+        nameLabel.text = name
     }
 }

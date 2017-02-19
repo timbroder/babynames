@@ -15,17 +15,19 @@ class FirstViewController: UIViewController {
 
     var kolodaView = KolodaView()
     var namesCollection: Results<Name>!
+    var swiperDelegate: SwiperDelegate!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        swiperDelegate = SwiperDelegate()
         
-        let namesRealm = BabyRealm().namesRealm()
+        let namesRealm = BabyRealm().globalSharedRealm()
         let namesDataService = NamesDataService(realm: namesRealm)
         namesCollection = namesDataService.all()
         
         kolodaView.dataSource = self
-        kolodaView.delegate = self
+        kolodaView.delegate = swiperDelegate
         
         self.view.addSubview(kolodaView)
         
@@ -42,24 +44,16 @@ class FirstViewController: UIViewController {
     }
 }
 
-extension FirstViewController: KolodaViewDelegate {
-    func kolodaDidRunOutOfCards(koloda: KolodaView) {
-//        dataSource.reset()
-    }
-    
-    func koloda(koloda: KolodaView, didSelectCardAt index: Int) {
-//        UIApplication.sharedApplication().openURL(NSURL(string: "https://yalantis.com/")!)
-    }
-}
-
 extension FirstViewController: KolodaViewDataSource {
     func kolodaNumberOfCards(_ koloda:KolodaView) -> Int {
         return namesCollection.count
     }
     
     func koloda(_ koloda: KolodaView, viewForCardAt index: Int) -> UIView {
-        let view = NameView()
-        return view
+        let name = namesCollection[index]
+        let nameVM = NameCardViewModel(name: name)
+        let view = nameVM.view
+        return view!
     }
     
 //    func koloda(koloda: KolodaView, viewForCardOverlayAt index: Int) -> OverlayView? {

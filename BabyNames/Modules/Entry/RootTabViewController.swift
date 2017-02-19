@@ -12,7 +12,7 @@ class RootTabViewController: UITabBarController, NameInitializer {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let namesRealm = BabyRealm().namesRealm()
+        let namesRealm = BabyRealm().globalSharedRealm()
         if self.needsInit(realm: namesRealm) {
             self.initNames(realm: namesRealm)
         }
